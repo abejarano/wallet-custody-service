@@ -1,0 +1,33 @@
+{
+  "name": "wallet-on-chain",
+  "version": "1.0.0",
+  "description": "Test wallet service",
+  "keywords": [
+    "wallet",
+    "btc",
+    "web3",
+    "eth"
+  ],
+  "homepage": "https://github.com/abejarano/wallet-on-chain#readme",
+  "bugs": {
+    "url": "https://github.com/abejarano/wallet-on-chain/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abejarano/wallet-on-chain.git"
+  },
+  "license": "ISC",
+  "author": "angel bejarano / angel.bejarano@jaspesoft.com",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@scure/bip32": "^2.0.1",
+    "bip39": "^3.1.0",
+    "bitcoinjs-lib": "^6.1.7",
+    "ethers": "^6.16.0",
+    "tronweb": "^6.0.2"
+  }
+}
