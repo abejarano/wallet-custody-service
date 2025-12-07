@@ -50,4 +50,9 @@ export interface WalletRepository {
   save(wallet: WalletRecord): Promise<WalletRecord>
 
   findById(walletId: string): Promise<WalletRecord | null>
+
+  findByOwnerAndAsset(
+    ownerId: string,
+    assetCode: string
+  ): Promise<WalletRecord | null>
 }
