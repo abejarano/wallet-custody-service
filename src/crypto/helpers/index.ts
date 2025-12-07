@@ -85,7 +85,7 @@ export interface DerivedAddressData {
   uncompressedPublicKey: Buffer
 }
 
-const chainAddressDerivers: Record<Chain, (pubKey: Buffer) => string> = {
+export const chainAddressDerivers: Record<Chain, (pubKey: Buffer) => string> = {
   ETH: ethAddressFromUncompressedPublicKey,
   BTC: btcP2PKHAddressFromUncompressedPublicKey,
   TRX: tronAddressFromUncompressedPublicKey,
